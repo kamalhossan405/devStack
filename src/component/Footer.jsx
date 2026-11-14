@@ -2,7 +2,7 @@ import FLogo from '../assets/logo-text.png';
 
 const Footer = () => {
   return (
-    <footer className="mt-20 border-t border-slate-200 bg-white">
+    <footer id="contact" className="mt-20 border-t border-slate-200 bg-white">
       <div className="container mx-auto px-6 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           <div className="flex flex-col gap-4">
@@ -15,7 +15,12 @@ const Footer = () => {
             </p>
 
             <div className="flex items-center gap-4 mt-2 text-sm font-medium text-gray-600">
-              <a href="#" className="hover:text-blue-600 transition-colors">
+              <a
+                href="https://github.com/kamalhossan405"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-blue-600 transition-colors"
+              >
                 GitHub
               </a>
               <a href="#" className="hover:text-blue-600 transition-colors">

@@ -2,7 +2,7 @@ import BannerLogo from '../assets/banner-stack.png';
 
 const Banner = () => {
   return (
-    <section className="py-16 md:py-24 bg-gradient-to-b from-white to-slate-50 border-b border-slate-100">
+    <section id="home" className="py-16 md:py-24 bg-gradient-to-b from-white to-slate-50 border-b border-slate-100">
       <div className="container mx-auto px-4">
         <div className="grid items-center gap-12 md:grid-cols-2">
           <div className="space-y-6 text-center md:text-left">
