@@ -10,7 +10,7 @@ const LeftSideBar = ({ products = [], selectedProducts = [], setSelectedProducts
     }
 
     setSelectedProducts([...selectedProducts, product]);
-    toast.success(`${product.name} added to stack!`);
+    toast.success("Technology added to stack!");
   };
 
   return (
@@ -75,7 +75,7 @@ const LeftSideBar = ({ products = [], selectedProducts = [], setSelectedProducts
                     : 'bg-slate-900 text-white hover:bg-cyan-600 shadow-sm active:scale-95'
                 }`}
               >
-                {isSelected ? '✓ In Your Stack' : 'Add to Stack'}
+                {isSelected ? 'Selected' : 'Add to Stack'}
               </button>
             </div>
           </div>

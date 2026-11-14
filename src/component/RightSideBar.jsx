@@ -4,12 +4,12 @@ import { toast } from 'react-toastify';
 const RightSideBar = ({ selectedProducts = [], setSelectedProducts }) => {
   const handleRemoveItem = (product) => {
     setSelectedProducts(selectedProducts.filter((item) => item.id !== product.id));
-    toast.info(`${product.name} removed from stack!`);
+    toast.success("Removed Successfully");
   };
 
   const handleRemoveAll = () => {
     setSelectedProducts([]);
-    toast.error('All technologies removed from stack!');
+    toast.success("All Technologies Removed");
   };
 
   if (selectedProducts.length === 0) {
