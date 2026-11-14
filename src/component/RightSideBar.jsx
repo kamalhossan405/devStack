@@ -42,7 +42,6 @@ const RightSideBar = ({ selectedProducts = [], setSelectedProducts }) => {
         </div>
       </div>
 
-      {/* Selected Items List */}
       <div className="mt-4 space-y-3 max-h-[500px] overflow-y-auto pr-1">
         {selectedProducts.map((product) => (
           <div
@@ -81,7 +80,6 @@ const RightSideBar = ({ selectedProducts = [], setSelectedProducts }) => {
         ))}
       </div>
 
-      {/* Clear All Button */}
       <div className="mt-6 pt-4 border-t border-slate-100">
         <button
           type="button"

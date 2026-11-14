@@ -24,7 +24,6 @@ const LeftSideBar = ({ products = [], selectedProducts = [], setSelectedProducts
             className="group flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-cyan-300 hover:shadow-xl"
           >
             <div>
-              {/* Header: Icon & Badge */}
               <div className="flex items-start justify-between gap-4">
                 <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-slate-50 p-3 ring-1 ring-slate-200 transition group-hover:bg-cyan-50">
                   <img
@@ -32,7 +31,6 @@ const LeftSideBar = ({ products = [], selectedProducts = [], setSelectedProducts
                     alt={product.name}
                     className="h-10 w-10 object-contain"
                     onError={(e) => {
-                      // Fallback in case icon fails to load
                       e.currentTarget.src = 'https://via.placeholder.com/40?text=Tech';
                     }}
                   />
@@ -43,7 +41,6 @@ const LeftSideBar = ({ products = [], selectedProducts = [], setSelectedProducts
                 </span>
               </div>
 
-              {/* Title & Description */}
               <div className="mt-5">
                 <h2 className="text-2xl font-bold text-slate-900 transition group-hover:text-cyan-600">
                   {product.name}
@@ -53,7 +50,6 @@ const LeftSideBar = ({ products = [], selectedProducts = [], setSelectedProducts
                 </p>
               </div>
 
-              {/* Specs: Category, Difficulty, Rating */}
               <div className="mt-5 grid grid-cols-3 gap-2 border-y border-slate-100 py-3 text-xs sm:text-sm font-semibold text-slate-700">
                 <div className="flex items-center">
                   <span className="truncate">{product.category}</span>
@@ -68,7 +64,6 @@ const LeftSideBar = ({ products = [], selectedProducts = [], setSelectedProducts
               </div>
             </div>
 
-            {/* Actions: Add to Stack Button */}
             <div className="mt-6 pt-2">
               <button
                 type="button"
